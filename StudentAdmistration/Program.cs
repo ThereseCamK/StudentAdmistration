@@ -15,12 +15,14 @@
             Console.WriteLine("1. for å legge til student");
             Console.WriteLine("2. for å vise alle studentene");
             Console.WriteLine("3. for å bergene grannomsnittskarakterer for alle studentene");
+
             Student therese = new Student("therese", 2, [2, 4, 6, 4, 5]);
             Student linn = new Student("linn", 2, [3, 4, 3, 4, 3]);
-            Student rebekka = new Student("rebekka", 2, [6, 5, 6, 4, 5]);
+            Student rebecka = new Student("rebecka", 2, [6, 5, 6, 4, 5]);
             students.Add(therese);
             students.Add(linn);
-            students.Add(rebekka);
+            students.Add(rebecka);
+
             var userChoice = Console.ReadLine();
             int choice = Convert.ToInt32(userChoice);
             if (choice == 1)
